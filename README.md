@@ -1,69 +1,91 @@
 # 🏢📘 Business Directory App
 
-A cross-platform mobile application built using **React Native** and **Firebase**, allowing users to **sign in**, **add**, **edit**, and **delete** their businesses, and browse other services in their community. This app aims to empower local businesses by providing them visibility and accessibility through a user-friendly interface.
+A cross-platform mobile application built with **React Native** and **Firebase**, allowing users to **sign in**, **add**, **edit**, and **delete** business listings, and explore other services in their local community.
+
+This app is designed to empower small businesses by providing them with visibility and easy access to potential customers through a clean, modern, and intuitive user experience.
 
 ---
 
 ## 🧭 Table of Contents
 
-- [Features](#features)
-- [Screenshots](#screenshots)
-- [Tech Stack](#tech-stack)
-- [Installation & Setup](#installation--setup)
-- [Project Structure](#project-structure)
-- [Firebase Configuration](#firebase-configuration)
-- [Available Scripts](#available-scripts)
-- [Future Enhancements](#future-enhancements)
-- [Developer](#developer)
-- [License](#license)
+- [Features](#️✅-features)
+- [Screenshots](#️🖼️-screenshots)
+- [Tech Stack](#️⚙️-tech-stack)
+- [Installation & Setup](#️🧰-installation--setup)
+- [Project Structure](#️📁-project-structure)
+- [Firebase Configuration](#️🔥-firebase-configuration)
+- [Available Scripts](#️📜-available-scripts)
+- [Future Enhancements](#️🚀-future-enhancements)
+- [Developer](#️👨‍💻-developer)
+- [License](#️📄-license)
 
 ---
 
 ## ✅ Features
 
 - 🔐 **User Authentication**
-  - Google Sign-In via Firebase Authentication.
+  - Google Sign-In with Firebase Authentication
 - 🧾 **Business Listings**
-  - Add, view, update, and delete businesses.
+  - Create, view, edit, and delete business profiles
 - 📸 **Image Upload**
-  - Upload images using Firebase Storage.
-- 🗂️ **Categories**
-  - Filter businesses by various categories.
-- 🔎 **Search Functionality**
-  - Easily search through available businesses.
+  - Upload and display business images via Firebase Storage
+- 🗂️ **Categorization**
+  - Organize businesses by custom categories
+- 🔎 **Search**
+  - Real-time search functionality for faster discovery
 - 👤 **User Profile**
-  - Personalized dashboard and business management.
+  - View personal listings, edit details, and manage account
 - 📤 **App Sharing**
-  - Built-in feature to share the app with others.
+  - Share app via native device sharing options
 - 📱 **Responsive UI**
-  - Mobile-friendly, intuitive design with modern UI components.
+  - Smooth and modern mobile interface with optimized UX
 
 ---
 
 ## 🖼️ Screenshots
 
-| Splash Screen | Home Screen | Businesses Screen |
-|-------------|---------------|----------------|
-| ![Splash Screen](./assets/screenshots/LoginScreen.PNG) | ![Home Screen](./assets/screenshots/Screenshot_32.png) | ![Businesses Screen](./assets/screenshots/BusinessesScreenWithReviews.PNG) |
+<table>
+  <tr>
+    <th>Splash Screen</th>
+    <th>Home Screen</th>
+    <th>Businesses Screen</th>
+  </tr>
+  <tr>
+    <td><img src="./assets/screenshots/LoginScreen.PNG" width="250"/></td>
+    <td><img src="./assets/screenshots/Screenshot_32.png" width="250"/></td>
+    <td><img src="./assets/screenshots/BusinessesScreenWithReviews.PNG" width="250"/></td>
+  </tr>
+</table>
 
-| Category Screen | Explore Screen | Profile Screen |
-|-------------|---------------|----------------|
-| ![Category Screen](./assets/screenshots/CategoryWiseBusinessesScreen.PNG) | ![Explore Screen](./assets/screenshots/ExploreScreenWithBusinessData.PNG | ![Profile Screen](./assets/screenshots/Screenshot_33.png) |
+<br/>
+
+<table>
+  <tr>
+    <th>Category Screen</th>
+    <th>Explore Screen</th>
+    <th>Profile Screen</th>
+  </tr>
+  <tr>
+    <td><img src="./assets/screenshots/CategoryWiseBusinessesScreen.PNG" width="250"/></td>
+    <td><img src="./assets/screenshots/ExploreScreenWithBusinessData.PNG" width="250"/></td>
+    <td><img src="./assets/screenshots/Screenshot_33.png" width="250"/></td>
+  </tr>
+</table>
 
 ---
 
 ## ⚙️ Tech Stack
 
-| Tool / Library            | Purpose                                   |
-|---------------------------|-------------------------------------------|
-| **React Native (Expo)**   | Core mobile app development framework     |
-| **Expo Router**           | Declarative navigation and routing        |
-| **Firebase Firestore**    | Real-time cloud database for business data|
-| **Firebase Authentication** | Google Sign-In for secure auth         |
-| **Firebase Storage**      | Hosting and serving business images       |
-| **React Native Image Picker** | Local image selection                |
-| **React Context API**     | Global state management (auth flow)       |
-| **NativeBase / Paper UI** | Pre-built UI components                   |
+| Technology / Library             | Description                                 |
+|----------------------------------|---------------------------------------------|
+| **React Native (Expo)**          | Core framework for building native apps     |
+| **Expo Router**                  | Routing and screen navigation               |
+| **Firebase Firestore**           | Cloud NoSQL database for storing business data |
+| **Firebase Authentication**      | User authentication with Google Sign-In     |
+| **Firebase Storage**             | Uploading and hosting business images       |
+| **React Native Image Picker**    | Selecting images from device gallery        |
+| **React Context API**            | App-wide state management (auth, user info) |
+| **NativeBase / React Native Paper** | Pre-designed UI components for faster dev |
 
 ---
 
@@ -71,9 +93,14 @@ A cross-platform mobile application built using **React Native** and **Firebase*
 
 ### 🔁 Prerequisites
 
-- Node.js ≥ 16.x
-- Expo CLI
-- Firebase Project (with Authentication, Firestore, and Storage enabled)
+Before you begin, ensure you have the following:
+
+- ✅ [Node.js](https://nodejs.org/) (v16 or higher)
+- ✅ [Expo CLI](https://docs.expo.dev/get-started/installation/)
+- ✅ A [Firebase project](https://console.firebase.google.com/) with:
+  - Authentication enabled (Google Sign-In)
+  - Firestore database set up
+  - Firebase Storage enabled
 
 ### 📦 Installation
 
@@ -84,3 +111,6 @@ cd community-directory-app
 
 # 2. Install dependencies
 npm install
+
+# 3. Start the development server
+npx expo start
